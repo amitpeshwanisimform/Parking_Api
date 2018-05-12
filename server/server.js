@@ -79,13 +79,13 @@ console.log(flagg)
   }).catch((e) => {
     res.status(400).send();
   });
-  
 
-   res.render('home.hbs', {
-    flag_1: flagg,
-    welcomeMessage: 'Welcome to my website',
+
+  //  res.render('home.hbs', {
+  //   flag_1: flagg,
+  //   welcomeMessage: 'Welcome to my website',
     
-  });
+  // });
 
 
 
@@ -138,5 +138,5 @@ app.get('/home', (req, res) => {
   });
 });
 
-reload(app);
+
 module.exports = {app};
